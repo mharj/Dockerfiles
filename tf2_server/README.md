@@ -1,1 +1,1 @@
-Path won't work .. makes full download
+TF2 patching didn't work .. some reaon makes full download.
