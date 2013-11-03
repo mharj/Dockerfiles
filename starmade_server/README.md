@@ -1,1 +1,1 @@
-Note: servers requires "starmade_base" to build
+Note: this server requires "starmade_base" image first to built
