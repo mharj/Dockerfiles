@@ -1,4 +1,3 @@
-root@mustikka:/home/mharj/builds/jenkins# more Dockerfile 
 FROM ubuntu:quantal
 MAINTAINER mharj
 RUN export DEBIAN_FRONTEND=noninteractive
