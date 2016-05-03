@@ -1,7 +1,7 @@
 FROM ubuntu:precise
 MAINTAINER mharj
 RUN apt-get update
-RUN apt-get install -y lib32gcc1 zip
+RUN apt-get install -y lib32gcc1 zip ca-certificates
 RUN apt-get clean all
 RUN mkdir -p /opt/steam
 ADD http://media.steampowered.com/client/steamcmd_linux.tar.gz /opt/steam/
