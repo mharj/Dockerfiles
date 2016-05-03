@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt-get install -y lib32gcc1 zip ca-certificates
 RUN apt-get clean all
 RUN mkdir -p /opt/steam
-ADD http://media.steampowered.com/client/steamcmd_linux.tar.gz /opt/steam/
+ADD https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz /opt/steam/
 RUN cd /opt/steam/ && tar xvfz steamcmd_linux.tar.gz
 RUN rm -f /opt/steam/steamcmd_linux.tar.gz
 RUN useradd -r steam -d /opt/steam/
