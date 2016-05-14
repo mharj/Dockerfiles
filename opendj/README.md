@@ -4,7 +4,7 @@ Note: This directory need to be copied as needs local opendj_3.*.deb file for Op
 
 How-To:
 
-Run OpenDJ initial interactive setup "run"  (+ports + volume mappings if required)
+Run OpenDJ initial interactive setup "run"  (+ports + volume mappings if required) ... ctrl+p ctrl+q to detach tty when started
 ```
 docker run -t -i -p 3389:389/tcp --name opendj -t mharj/opendj
 ```
