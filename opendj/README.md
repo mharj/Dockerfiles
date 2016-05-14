@@ -19,11 +19,11 @@ docker run -t -i \
 -p 3389:389/tcp \
 -p 3636:636/tcp \
 -p 34444:4444/tcp \
--v /storage/bak:/opt/opendj/bak \
--v /storage/db:/opt/opendj/db \
--v /storage/config:/opt/opendj/config \
--v /storage/log:/opt/opendj/logs \
--v /storage/locks:/opt/opendj/locks \
+-v /storage/node1/bak:/opt/opendj/bak \
+-v /storage/node1/db:/opt/opendj/db \
+-v /storage/node1/config:/opt/opendj/config \
+-v /storage/node1/log:/opt/opendj/logs \
+-v /storage/node1/locks:/opt/opendj/locks \
 --name opendj-node1 -t mharj/opendj
 ```
 
