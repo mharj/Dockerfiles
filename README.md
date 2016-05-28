@@ -7,7 +7,7 @@ Team Fortress 2 dedicated server build order
 
 1. "steam_base" FROM ubuntu:xenial
 2. "tf2_base" FROM steam_base (to keep most of TF2 data in one image)
-3. "tf2_server" FROM tf2_base (for update + service)
+3. "tf2_server" FROM tf2_base (for small updates + service)
  
 ```
 # docker run -p 27015:27015/udp -d run tf2_server +maxplayers 24 +map ctf_2fort +hostname "TF2 Server"
