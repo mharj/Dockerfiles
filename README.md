@@ -1,9 +1,9 @@
 Dockerfiles
 ===========
 
-# Dockerfile repo
 
-## Team Fortress 2 dedicated server build order
+
+### Team Fortress 2 dedicated server build order
 
 1. "steam_base" FROM ubuntu:xenial
 2. "tf2_base" FROM steam_base (to keep most of TF2 data in one image)
