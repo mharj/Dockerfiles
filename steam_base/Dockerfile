@@ -1,4 +1,4 @@
-FROM ubuntu:precise
+FROM ubuntu:xenial
 MAINTAINER mharj
 RUN apt-get update
 RUN apt-get install -y lib32gcc1 zip ca-certificates
