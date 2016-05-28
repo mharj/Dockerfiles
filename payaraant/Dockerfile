@@ -7,4 +7,4 @@ RUN cd && \
     rm apache-ant-${ANT_VERSION}-bin.tar.gz
 ENV ANT_HOME /opt/ant
 ENV PATH ${PATH}:/opt/ant/bin
-ADD https://leeps.ucsc.edu/cong/export/2414/trunk/lib/CopyLibs-2/org-netbeans-modules-java-j2seproject-copylibstask.jar /opt/ant/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar
+ADD http://leeps.ucsc.edu/cong/export/2414/trunk/lib/CopyLibs-2/org-netbeans-modules-java-j2seproject-copylibstask.jar /opt/ant/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar
