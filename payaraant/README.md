@@ -14,7 +14,7 @@ docker run -i --rm -v ${SRC_DIR}:/src mharj/payaraant
 ```
 cp ${SRC_DIR}/dist/*.war ...
 ```
-### or automate with Dockerfile
+### or automate deployment with Dockerfile
 ```
 FROM payara/micro
 COPY dist/HelloWorld.war /opt/HelloWorld.war
