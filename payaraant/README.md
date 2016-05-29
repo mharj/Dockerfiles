@@ -6,7 +6,7 @@ Used to automate J2EE war file building from Netbeans project
 ```
 docker build -q -t mharj/payaraant https://github.com/mharj/Dockerfiles.git#:payaraant
 ```
-### Build war file (uid 1000 needs write access to build and dist)
+### Build war file (Payara uid 1000 needs write access to build and dist)
 ```
 mkdir ${SRC_DIR}/{build,dist} && \
 chown -Rh 1000 ${SRC_DIR}/{build,dist} && \
