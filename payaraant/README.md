@@ -1,6 +1,6 @@
 Payara ANT setup
 ================
-Used to automate J2EE war file building from Netbeans
+Used to automate J2EE war file building for Netbeans
 
 ### Image
 docker build -q -t mharj/payaraant https://github.com/mharj/Dockerfiles.git#:payaraant
