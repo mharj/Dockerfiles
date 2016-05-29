@@ -12,7 +12,7 @@ docker run -i --rm -v ${SRC_DIR}:/src mharj/payaraant
 ```
 ### Copy war
 ```
-cp dist/HelloWorldTest.war ...
+cp dist/*.war ...
 ```
 ### or automate with Dockerfile
 ```
