@@ -1,4 +1,4 @@
-Payara ANT setup
+Payara J2EE ANT setup
 ================
 Used to automate J2EE war file building from Netbeans project
 
