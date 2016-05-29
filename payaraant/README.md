@@ -4,5 +4,5 @@ Used to automate J2EE war file building
 
 ### Image
 docker build -q -t mharj/payaraant https://github.com/mharj/Dockerfiles.git#:payaraant
-### Run
-docker run -i --rm -v ${SRC_DIR}:/mnt mharj/payaraant
+### Build war file
+docker run -i --rm -v ${SRC_DIR}:/src mharj/payaraant
