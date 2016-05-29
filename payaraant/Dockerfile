@@ -8,6 +8,5 @@ RUN cd && \
 ENV ANT_HOME /opt/ant
 ENV PATH ${PATH}:/opt/ant/bin
 COPY org-netbeans-modules-java-j2seproject-copylibstask.jar /opt/ant/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar
-COPY build.sh /opt/ant/build.sh
-RUN chmod 755 /opt/ant/build.sh
-CMD ["bash","-c","/opt/ant/build.sh"]
+WORKDIR /mnt
+CMD ['ant -S -Dj2ee.server.home=$PAYARA_PATH -Dlibs.CopyLibs.classpath=/opt/ant/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar']
