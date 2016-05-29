@@ -8,5 +8,6 @@ RUN cd && \
 ENV ANT_HOME /opt/ant
 ENV PATH ${PATH}:/opt/ant/bin
 COPY org-netbeans-modules-java-j2seproject-copylibstask.jar /opt/ant/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar
-RUN chmod 755 /build.sh
-CMD ["/build.sh"]
+COPY build.sh /usr/local/bin/build.sh
+RUN chmod 755 /usr/local/bin/build.sh
+CMD ["/usr/local/bin/build.sh"]
