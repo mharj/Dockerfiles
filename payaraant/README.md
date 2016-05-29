@@ -1,6 +1,6 @@
 Payara ANT setup
 ================
-Used to build J2EE war files
+Used to automate J2EE war file building
 
 ### Image
 docker build -q -t mharj/payaraant https://github.com/mharj/Dockerfiles.git#:payaraant
