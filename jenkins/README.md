@@ -1,6 +1,10 @@
 Jenkins setup
 =============
 
+Build image:
+```
+docker build -t mharj/jenkins https://github.com/mharj/Dockerfiles.git#:jenkins
+```
 
 Get jenkins container password:
 ```
