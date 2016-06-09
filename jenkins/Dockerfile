@@ -6,7 +6,7 @@ RUN mkdir -p /var/run/jenkins
 ADD http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key /tmp/jenkins-ci.org.key
 RUN cat /tmp/jenkins-ci.org.key | apt-key add -
 RUN echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list
-RUN apt-get install -y software-properties-common && add-apt-repository ppa:webupd8team/java
+RUN apt-get update && apt-get install -y software-properties-common && add-apt-repository ppa:webupd8team/java
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
 RUN echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
 RUN apt-get update && apt-get install -y oracle-java8-installer jenkins && apt-get clean all
