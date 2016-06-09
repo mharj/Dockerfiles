@@ -13,6 +13,8 @@ RUN mkdir -p /var/run/jenkins && \
   echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections && \
   apt-get update && \
   apt-get install -y oracle-java8-installer jenkins && \
+  apt-get remove -y software-properties-common && \
+  apt-get autoremove -y && \
   apt-get clean all && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 ENV JENKINS_HOME /var/lib/jenkins
