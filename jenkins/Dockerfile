@@ -3,7 +3,8 @@ MAINTAINER mharj
 RUN export DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND noninteractive
 RUN mkdir -p /var/run/jenkins
-RUN apt-key add http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key
+ADD http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key /tmp/jenkins-ci.org.key
+RUN cat /tmp/jenkins-ci.org.key | apt-key add -
 RUN echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list
 RUN apt-get install -y software-properties-common && add-apt-repository ppa:webupd8team/java
 RUN echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
