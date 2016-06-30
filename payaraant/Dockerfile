@@ -9,4 +9,4 @@ ENV ANT_HOME /opt/ant
 ENV PATH ${PATH}:/opt/ant/bin
 COPY org-netbeans-modules-java-j2seproject-copylibstask.jar /opt/ant/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar
 WORKDIR /src
-CMD ["/opt/ant/bin/ant","-S","-Dj2ee.server.home=$PAYARA_PATH","-Dlibs.CopyLibs.classpath=/opt/ant/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar","-lib","/opt/payara41/glassfish/lib/javaee.jar"]
+CMD ["/opt/ant/bin/ant","-S","-Dj2ee.server.home=$PAYARA_PATH","-Dlibs.CopyLibs.classpath=/opt/ant/lib/org-netbeans-modules-java-j2seproject-copylibstask.jar"]
