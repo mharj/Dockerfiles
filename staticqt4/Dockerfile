@@ -2,6 +2,9 @@ FROM ubuntu:xenial
 MAINTAINER mharj
 RUN export DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND noninteractive
+ENV http_proxy=http://localhost:3128 \
+    https_proxy=http://localhost:3128 \
+    ftp_proxy=http://localhost:3128
 ADD http://download.qt.io/official_releases/qt/5.7/5.7.0/single/qt-everywhere-opensource-src-5.7.0.tar.gz /tmp/
 RUN apt-get update && \
 apt-get install -y build-essential git libssl-dev libmysqlclient-dev libpq-dev libcups2-dev libasound2-dev libudev-dev && \
