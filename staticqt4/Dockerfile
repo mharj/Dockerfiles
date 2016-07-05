@@ -6,6 +6,6 @@ ADD http://download.qt.io/official_releases/qt/5.7/5.7.0/single/qt-everywhere-op
 RUN apt-get update && \
 apt-get install -y build-essential git libssl-dev libmysqlclient-dev libpq-dev libcups2-dev libasound2-dev libudev-dev && \
 cd /opt &&  \
-tar xfz /tmp/qt-everywhere-opensource-src-*.tar.gz
+tar xfz --checkpoint=10 --checkpoint-action=dot /tmp/qt-everywhere-opensource-src-*.tar.gz
 #RUN cd /opt && \
 #./configure -prefix /opt/qt5static -opensource -static -confirm-license
