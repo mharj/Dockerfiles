@@ -1,4 +1,4 @@
-FROM starmade_base:latest
+FROM mharj/starmade_base:latest
 MAINTAINER mharj
 RUN export DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND noninteractive
