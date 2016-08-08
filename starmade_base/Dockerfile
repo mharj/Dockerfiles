@@ -18,4 +18,4 @@ ADD http://files.star-made.org/StarMade-Starter.jar /opt/starmade/
 RUN useradd -r starmade -d /opt/starmade/
 RUN chown -R -h starmade:starmade /opt/starmade/
 RUN su - starmade -c "java -jar StarMade-Starter.jar -nogui"
-RUN chmod 755 /opt/starmade/StarMade/*.sh
+RUN chmod 755 /opt/starmade/StarMade/StarMade-dedicated-server-linux.sh
